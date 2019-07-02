@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NH-8t-n1y">
+                                <rect key="frame" x="104" y="389" width="167" height="34"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="21"/>
+                                <state key="normal" title="Press To Enter"/>
+                                <connections>
+                                    <segue destination="Y8U-LN-zWJ" kind="show" id="wIo-bt-hlO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4NH-8t-n1y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CEP-Gg-Hpn"/>
+                            <constraint firstItem="4NH-8t-n1y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nJ0-bz-JPb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1153" y="-579"/>
+        </scene>
+        <!--InstaGram-->
+        <scene sceneID="wdh-0x-ldG">
+            <objects>
+                <viewController id="emy-Jw-68d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PGO-bu-J6a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="O8D-54-39h">
+                                <rect key="frame" x="67" y="154" width="240" height="186"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.42117409909999998" blue="0.46913541019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O8D-54-39h" firstAttribute="centerX" secondItem="PGO-bu-J6a" secondAttribute="centerX" id="AU6-MR-dI7"/>
+                            <constraint firstItem="GNl-4t-U9E" firstAttribute="bottom" secondItem="O8D-54-39h" secondAttribute="bottom" constant="389" id="PuG-dR-HIn"/>
+                            <constraint firstItem="O8D-54-39h" firstAttribute="top" secondItem="GNl-4t-U9E" secondAttribute="top" constant="110" id="aMb-1a-AL6"/>
+                            <constraint firstItem="O8D-54-39h" firstAttribute="leading" secondItem="GNl-4t-U9E" secondAttribute="leading" constant="67" id="wc2-T2-2ZS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GNl-4t-U9E"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="InstaGram" image="instagram" id="JUS-mb-5fG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZS-Bh-5kl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264.80000000000001" y="230.54187192118226"/>
+        </scene>
+        <!--Notification-->
+        <scene sceneID="yDp-Q2-KEb">
+            <objects>
+                <viewController id="fUa-WH-lmc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ox-TT-c2y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quq-MI-wQV">
+                                <rect key="frame" x="93" y="333" width="189" height="88"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.95525083850000003" blue="0.17145185800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eiA-oc-cTk" firstAttribute="bottom" secondItem="quq-MI-wQV" secondAttribute="bottom" constant="308" id="JTV-fM-SJw"/>
+                            <constraint firstItem="quq-MI-wQV" firstAttribute="top" secondItem="eiA-oc-cTk" secondAttribute="top" constant="289" id="OeP-b5-LQL"/>
+                            <constraint firstItem="quq-MI-wQV" firstAttribute="centerX" secondItem="0ox-TT-c2y" secondAttribute="centerX" id="ahc-tc-xRE"/>
+                            <constraint firstItem="quq-MI-wQV" firstAttribute="leading" secondItem="eiA-oc-cTk" secondAttribute="leading" constant="93" id="ooM-qV-Ea1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eiA-oc-cTk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notification" image="bell" id="7YR-a8-H0j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7XK-Gk-ZgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="230.54187192118226"/>
+        </scene>
+        <!--FaceBook-->
+        <scene sceneID="X5V-Gf-kEi">
+            <objects>
+                <viewController id="QKo-D0-P8P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tuw-Zc-aSi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fbLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4lN-9Q-UbW">
+                                <rect key="frame" x="41" y="125" width="292" height="273"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27452566070000001" green="0.3838726609" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4lN-9Q-UbW" firstAttribute="leading" secondItem="PoY-h6-v5g" secondAttribute="leading" constant="41" id="63S-2c-GPS"/>
+                            <constraint firstItem="PoY-h6-v5g" firstAttribute="bottom" secondItem="4lN-9Q-UbW" secondAttribute="bottom" constant="331" id="gGU-iz-EWB"/>
+                            <constraint firstItem="4lN-9Q-UbW" firstAttribute="top" secondItem="PoY-h6-v5g" secondAttribute="top" constant="81" id="pcb-gl-ell"/>
+                            <constraint firstItem="4lN-9Q-UbW" firstAttribute="centerX" secondItem="Tuw-Zc-aSi" secondAttribute="centerX" id="xna-cO-tqL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PoY-h6-v5g"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="FaceBook" image="facebook" id="GXT-1t-jOS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7S-Nf-1E1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356" y="230.54187192118226"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="0I0-Ib-TLr">
+            <objects>
+                <viewController id="Ewa-Bf-Fis" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jPt-Ax-tyJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download-1" translatesAutoresizingMaskIntoConstraints="NO" id="IFz-aw-NK5">
+                                <rect key="frame" x="113" y="99" width="149" height="142"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obO-eX-P8W">
+                                <rect key="frame" x="130" y="614" width="115" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="EYb-cg-6IC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <state key="normal" title="Open">
+                                    <color key="titleColor" red="1" green="0.1041477911" blue="0.03835822966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSK-nN-I4z" kind="show" id="kta-ZL-k9F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15113092664990113" green="1" blue="0.39442855980083069" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IFz-aw-NK5" firstAttribute="top" secondItem="eMT-UY-7Xa" secondAttribute="top" constant="11" id="7JD-gG-y66"/>
+                            <constraint firstItem="IFz-aw-NK5" firstAttribute="centerX" secondItem="jPt-Ax-tyJ" secondAttribute="centerX" id="8pg-Iu-ba9"/>
+                            <constraint firstItem="eMT-UY-7Xa" firstAttribute="bottom" secondItem="IFz-aw-NK5" secondAttribute="bottom" constant="537" id="NVb-sJ-6jY"/>
+                            <constraint firstItem="obO-eX-P8W" firstAttribute="leading" secondItem="eMT-UY-7Xa" secondAttribute="leading" constant="130" id="NfF-jp-SPi"/>
+                            <constraint firstItem="IFz-aw-NK5" firstAttribute="leading" secondItem="eMT-UY-7Xa" secondAttribute="leading" constant="113" id="fDg-Oq-hdl"/>
+                            <constraint firstItem="eMT-UY-7Xa" firstAttribute="bottom" secondItem="obO-eX-P8W" secondAttribute="bottom" constant="130" id="iae-IS-g39"/>
+                            <constraint firstItem="obO-eX-P8W" firstAttribute="centerX" secondItem="IFz-aw-NK5" secondAttribute="centerX" id="wup-vy-ohV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eMT-UY-7Xa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contacts" id="NbY-Ju-Vso"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qf-fl-NPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="-579"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iOc-8q-nMC">
+            <objects>
+                <viewController id="cSK-nN-I4z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1vA-yp-2dr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.21817640312507391" blue="0.25859141021559917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="b3v-PN-GTv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PjT-hK-cOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1982" y="-579"/>
+        </scene>
+        <!--tabBar-->
+        <scene sceneID="NYa-rh-d00">
+            <objects>
+                <tabBarController title="tabBar" id="Y8U-LN-zWJ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bgl-jV-Lcf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QKo-D0-P8P" kind="relationship" relationship="viewControllers" id="DHL-er-0aA"/>
+                        <segue destination="emy-Jw-68d" kind="relationship" relationship="viewControllers" id="5ud-J8-yGV"/>
+                        <segue destination="fUa-WH-lmc" kind="relationship" relationship="viewControllers" id="xPo-m8-v0K"/>
+                        <segue destination="Auw-3E-g7c" kind="show" id="GXY-jN-cWg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0to-2F-egD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-246" y="-579"/>
+        </scene>
+        <!--contacts-->
+        <scene sceneID="BO1-Uf-6mf">
+            <objects>
+                <navigationController title="contacts" automaticallyAdjustsScrollViewInsets="NO" id="Auw-3E-g7c" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contacts" image="people" id="sbe-gU-Cgz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0EI-bD-gTP">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ewa-Bf-Fis" kind="relationship" relationship="rootViewController" id="AB1-SI-tlC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Mh-tW-232" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="-579"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell" width="30" height="30"/>
+        <image name="download" width="225" height="225"/>
+        <image name="download-1" width="225" height="225"/>
+        <image name="facebook" width="30" height="30"/>
+        <image name="fbLogo" width="225" height="225"/>
+        <image name="instagram" width="30" height="30"/>
+        <image name="people" width="30" height="30"/>
+    </resources>
+</document>
